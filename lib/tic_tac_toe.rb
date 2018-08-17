@@ -50,7 +50,8 @@ def turn(board) # individual turn of play
     turn(board)
   else
     current_player(board)
-    move(board, index, current_player)
+    player_token = current_player
+    move(board, index, player_token)
   end
   display_board(board)
 end
