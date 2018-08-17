@@ -49,9 +49,7 @@ def turn(board) # individual turn of play
   if !valid_move?(board, index)
     turn(board)
   else
-    current_player(board)
-    player_token = current_player
-    move(board, index, player_token)
+    move(board, index, player_token = "X")
   end
   display_board(board)
 end
